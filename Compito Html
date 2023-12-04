@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <title>La Mia Pagina</title>
+  <style>
+    body {
+      background-color: lightblue;
+      color: black;
+      font-size: 16px;
+    }
+    /* Aggiungi altri stili CSS secondo le tue preferenze */
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Nominativo</h1>
+    <img src="link_all'immagine" alt="Immagine">
+  </header>
+  <main>
+    <section>
+      <h2>Bio</h2>
+      <p>La tua biografia qui...</p>
+    </section>
+    <section>
+      <h2>Skills</h2>
+      <p>Linguaggi di programmazione conosciuti: HTML, CSS, JavaScript, etc.</p>
+    </section>
+    <section>
+      <h2>Esperienze lavorative</h2>
+      <p>Descrizione delle tue esperienze lavorative.</p>
+    </section>
+    <section>
+      <h2>Social</h2>
+      <p>Link ai tuoi profili social</p>
+    </section>
+  </main>
+  
+  <footer>
+    <h2>Contatti</h2>
+    <form onsubmit="return validateForm()">
+      <label>Nome:<br>
+        <input type="text" name="name" required>
+      </label><br><br>
+      <label>Email:<br>
+        <input type="email" name="email" required>
+      </label><br><br>
+      <label>Messaggio:<br>
+        <textarea name="message" rows="4" required></textarea>
+      </label><br><br>
+      <input type="submit" value="Invia">
+    </form>
+  </footer>
+  
+  <script>
+    function validateForm() {
+      var email = document.querySelector('input[type="email"]').value;
+      if (!email.includes("@")) {
+        alert("Inserisci un'email valida!");
+        return false;
+      }
+      return true;
+    }
+  </script>
+</body>
+</html>
