@@ -9,22 +9,21 @@
       color: black;
       font-size: 16px;
     }
-    /* Aggiungi altri stili CSS secondo le tue preferenze */
   </style>
 </head>
 <body>
   <header>
     <h1>Nominativo</h1>
-    <img src="link_all'immagine" alt="Immagine">
+    <img src="https://i.pinimg.com/564x/27/fb/7f/27fb7fc492f0f01463084ed8f95513b9.jpg" alt="Foto aesthetic di un codice">
   </header>
   <main>
     <section>
       <h2>Bio</h2>
-      <p>La tua biografia qui...</p>
+      <p>La tua biografia qui</p>
     </section>
     <section>
       <h2>Skills</h2>
-      <p>Linguaggi di programmazione conosciuti: HTML, CSS, JavaScript, etc.</p>
+      <p>Linguaggi di programmazione conosciuti: HTML, CSS, JavaScript e C</p>
     </section>
     <section>
       <h2>Esperienze lavorative</h2>
@@ -33,6 +32,7 @@
     <section>
       <h2>Social</h2>
       <p>Link ai tuoi profili social</p>
+      <a href="https://www.instagram.com/not.arwen._/">Instagram</a>
     </section>
   </main>
   
@@ -41,13 +41,13 @@
     <form onsubmit="return validateForm()">
       <label>Nome:<br>
         <input type="text" name="name" required>
-      </label><br><br>
+      </label> <br> <br>
       <label>Email:<br>
         <input type="email" name="email" required>
-      </label><br><br>
+      </label> <br> <br>
       <label>Messaggio:<br>
         <textarea name="message" rows="4" required></textarea>
-      </label><br><br>
+      </label> <br> <br>
       <input type="submit" value="Invia">
     </form>
   </footer>
